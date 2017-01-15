@@ -1035,7 +1035,7 @@ may be already be on."
 
 ;; should perhaps wrap this in an eval-when?
 (create-irc-message-classes #.(remove-duplicates (mapcar #'second *reply-names*)))
-(create-irc-message-classes (:privmsg :notice :kick :topic :error :mode :ping
+(create-irc-message-classes (:privmsg :notice :kick :topic :error :mode :ping :whisper :clearchat
                              :nick :join :part :quit :kill :pong :invite))
 
 (defmethod find-irc-message-class (type)

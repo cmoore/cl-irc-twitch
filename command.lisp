@@ -570,7 +570,7 @@ for `connection'."))
                                                  "rejected"))))
 
 ;;
-;; IRC commands which make some sence in a DCC CHAT context
+;; IRC commands which make some sense in a DCC CHAT context
 ;;
 
 (defmethod quit ((connection dcc-chat-connection)
