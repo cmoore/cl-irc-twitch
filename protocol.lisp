@@ -1038,7 +1038,7 @@ may be already be on."
 (create-irc-message-classes (:privmsg :notice :kick :topic :error :mode :ping
                              :nick :join :part :quit :kill :pong :invite
                              ;; Support for twitch.tv's IRC extensions.
-                             :whisper :clearchat :mode :usernotice :part))
+                             :whisper :clearchat :mode :usernotice :part :reconnect))
 
 (defmethod find-irc-message-class (type)
   (declare (ignore type))
